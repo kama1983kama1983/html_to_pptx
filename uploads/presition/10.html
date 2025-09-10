@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التدريبات العملية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #CE1126;
+            padding: 20px 70px;
+            color: white;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 30px 70px;
+        }
+        .training-grid {
+            display: flex;
+            gap: 25px;
+            flex-grow: 1;
+        }
+        .training-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .training-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            transition: transform 0.3s ease;
+        }
+        .training-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: rgba(206, 17, 38, 0.9);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .card-header i {
+            font-size: 28px;
+            margin-left: 12px;
+        }
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .training-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: rgba(206, 17, 38, 0.05);
+            border-radius: 8px;
+            padding: 12px 15px;
+            transition: background-color 0.2s ease;
+        }
+        .training-item:hover {
+            background-color: rgba(206, 17, 38, 0.1);
+        }
+        .training-item:last-child {
+            margin-bottom: 0;
+        }
+        .training-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(206, 17, 38, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        .training-icon i {
+            font-size: 28px;
+            color: #CE1126;
+        }
+        .training-text {
+            font-size: 20px;
+            font-weight: 500;
+            color: #333;
+        }
+        .image-container {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 180px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+        .footer {
+            padding: 15px 70px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="header">
+            <h1 class="title">التدريبات العملية</h1>
+        </div>
+        <div class="content">
+            <div class="training-grid">
+                <div class="training-column">
+                    <div class="training-card">
+                        <div class="card-header">
+                            <i class="material-icons">format_list_numbered</i>
+                            <div class="card-title">الطوابير</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">accessibility_new</i>
+                                </div>
+                                <div class="training-text">التدريب على الوقوف الصحيح</div>
+                            </div>
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">directions_walk</i>
+                                </div>
+                                <div class="training-text">الحركة المنظمة</div>
+                            </div>
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">groups</i>
+                                </div>
+                                <div class="training-text">التنسيق الجماعي</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://sfile.chatglm.cn/images-ppt/d784585cd591.jpg" alt="الطلاب في تدريبات الطوابير">
+                    </div>
+                </div>
+                
+                <div class="training-column">
+                    <div class="training-card">
+                        <div class="card-header">
+                            <i class="material-icons">fitness_center</i>
+                            <div class="card-title">التدريبات الرياضية</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">sports_martial_arts</i>
+                                </div>
+                                <div class="training-text">الكاراتيه والدفاع عن النفس</div>
+                            </div>
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">directions_run</i>
+                                </div>
+                                <div class="training-text">التمارين البدنية المكثفة</div>
+                            </div>
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">monitor_heart</i>
+                                </div>
+                                <div class="training-text">اختبارات اللياقة البدنية</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://sfile.chatglm.cn/images-ppt/086447f71311.jpg" alt="الطلاب في تدريبات رياضية">
+                    </div>
+                </div>
+                
+                <div class="training-column">
+                    <div class="training-card">
+                        <div class="card-header">
+                            <i class="material-icons">rule</i>
+                            <div class="card-title">الانضباط</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">style</i>
+                                </div>
+                                <div class="training-text">الالتزام بالزي الموحد</div>
+                            </div>
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">account_tree</i>
+                                </div>
+                                <div class="training-text">احترام التسلسل القيادي</div>
+                            </div>
+                            <div class="training-item">
+                                <div class="training-icon">
+                                    <i class="material-icons">done_all</i>
+                                </div>
+                                <div class="training-text">تنفيذ الأوامر بدقة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://sfile.chatglm.cn/images-ppt/288a650e7ac0.jpg" alt="الطلاب في تدريبات الانضباط">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">بحث عن التربية العسكرية</div>
+            <div class="footer-text">10</div>
+        </div>
+    </div>
+</body>
+</html>

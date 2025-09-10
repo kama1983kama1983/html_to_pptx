@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحمل المسؤولية والانضباط</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #CE1126;
+            padding: 20px 70px;
+            color: white;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 30px 70px;
+        }
+        .main-container {
+            display: flex;
+            gap: 30px;
+            flex-grow: 1;
+        }
+        .left-section, .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            margin-left: 15px;
+            font-size: 32px;
+            color: #CE1126;
+        }
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-grow: 1;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        .card-icon {
+            width: 70px;
+            background-color: rgba(206, 17, 38, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .card-icon i {
+            font-size: 32px;
+            color: #CE1126;
+        }
+        .card-content {
+            padding: 15px 20px;
+            flex-grow: 1;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .card-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-item {
+            background-color: rgba(206, 17, 38, 0.08);
+            border-radius: 20px;
+            padding: 6px 12px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .card-item i {
+            font-size: 18px;
+            margin-left: 6px;
+            color: #CE1126;
+        }
+        .image-container {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 220px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+        .footer {
+            padding: 15px 70px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="header">
+            <h1 class="title">تحمل المسؤولية والانضباط</h1>
+        </div>
+        <div class="content">
+            <div class="main-container">
+                <div class="left-section">
+                    <div class="section-title">
+                        <i class="material-icons">assignment_ind</i>
+                        <span>تحمل المسؤولية</span>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">fact_check</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">المساءلة عن الأفعال</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">gavel</i>الاعتراف بالخطأ</div>
+                                    <div class="card-item"><i class="material-icons">rate_review</i>تقييم الأداء</div>
+                                    <div class="card-item"><i class="material-icons">psychology</i>التعلم من الأخطاء</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">task_alt</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">الالتزام بالواجبات</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">schedule</i>الإنجاز في الوقت</div>
+                                    <div class="card-item"><i class="material-icons">done_all</i>التنفيذ بدقة</div>
+                                    <div class="card-item"><i class="material-icons">verified</i>الجودة في الأداء</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">public</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">المسؤولية تجاه المجتمع</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">volunteer_activism</i>خدمة المجتمع</div>
+                                    <div class="card-item"><i class="material-icons">diversity_3</i>التعاون مع الآخرين</div>
+                                    <div class="card-item"><i class="material-icons">eco</i>الحفاظ على البيئة</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-section">
+                    <div class="section-title">
+                        <i class="material-icons">rule</i>
+                        <span>الانضباط وأثره على سلوك الطالب</span>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">self_improvement</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">الانضباط الذاتي</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">timer</i>إدارة الوقت</div>
+                                    <div class="card-item"><i class="material-icons">psychology_alt</i>السيطرة على النفس</div>
+                                    <div class="card-item"><i class="material-icons">settings</i>تنظيم الأولويات</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">policy</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">الالتزام بالقواعد</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">menu_book</i>احترام اللوائح</div>
+                                    <div class="card-item"><i class="material-icons">verified_user</i>اتباع التعليمات</div>
+                                    <div class="card-item"><i class="material-icons">gavel</i>الالتزام بالقوانين</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">trending_up</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">أثر التربية العسكرية على سلوك الطالب</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">school</i>تحسين الأداء الأكاديمي</div>
+                                    <div class="card-item"><i class="material-icons">schedule</i>زيادة الالتزام بالمواعيد</div>
+                                    <div class="card-item"><i class="material-icons">groups</i>تحسين العلاقات الاجتماعية</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="https://sfile.chatglm.cn/images-ppt/288a650e7ac0.jpg" alt="طلاب في تدريبات عسكرية تعزز المسؤولية والانضباط">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">بحث عن التربية العسكرية</div>
+            <div class="footer-text">13</div>
+        </div>
+    </div>
+</body>
+</html>

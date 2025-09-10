@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التدريبات النظرية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #CE1126;
+            padding: 20px 70px;
+            color: white;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 30px 70px;
+        }
+        .main-container {
+            display: flex;
+            gap: 30px;
+            flex-grow: 1;
+        }
+        .left-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            margin-left: 15px;
+            font-size: 32px;
+            color: #CE1126;
+        }
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-grow: 1;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        .card-icon {
+            width: 70px;
+            background-color: rgba(206, 17, 38, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .card-icon i {
+            font-size: 32px;
+            color: #CE1126;
+        }
+        .card-content {
+            padding: 15px 20px;
+            flex-grow: 1;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .card-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-item {
+            background-color: rgba(206, 17, 38, 0.08);
+            border-radius: 20px;
+            padding: 6px 12px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        .card-item i {
+            font-size: 18px;
+            margin-left: 6px;
+            color: #CE1126;
+        }
+        .image-container {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 220px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+        .footer {
+            padding: 15px 70px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="header">
+            <h1 class="title">التدريبات النظرية</h1>
+        </div>
+        <div class="content">
+            <div class="main-container">
+                <div class="left-section">
+                    <div class="section-title">
+                        <i class="material-icons">menu_book</i>
+                        <span>المحاضرات</span>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">history</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">تاريخ القوات المسلحة المصرية</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">star</i>انتصارات تاريخية</div>
+                                    <div class="card-item"><i class="material-icons">military_tech</i>بطولات</div>
+                                    <div class="card-item"><i class="material-icons">timeline</i>تطور القوات</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">security</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">استراتيجيات الأمن القومي</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">policy</i>مفاهيم أساسية</div>
+                                    <div class="card-item"><i class="material-icons">trending_up</i>تحديات معاصرة</div>
+                                    <div class="card-item"><i class="material-icons">shield</i>آليات الحماية</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">gavel</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">حقوق وواجبات المواطن</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">account_balance</i>الحقوق الدستورية</div>
+                                    <div class="card-item"><i class="material-icons">assignment</i>الواجبات الوطنية</div>
+                                    <div class="card-item"><i class="material-icons">balance</i>المسؤولية المجتمعية</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-section">
+                    <div class="section-title">
+                        <i class="material-icons">info</i>
+                        <span>معلومات عامة</span>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">account_tree</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">هيكل القوات المسلحة</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">architecture</i>القيادة</div>
+                                    <div class="card-item"><i class="material-icons">category</i>الأسلحة</div>
+                                    <div class="card-item"><i class="material-icons">groups</i>الوحدات</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">emoji_events</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">أهم الانتصارات</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">military_tech</i>حرب أكتوبر</div>
+                                    <div class="card-item"><i class="material-icons">flag</i>معارك تاريخية</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="material-icons">construction</i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">دور القوات في التنمية</div>
+                                <div class="card-items">
+                                    <div class="card-item"><i class="material-icons">business</i>مشروعات قومية</div>
+                                    <div class="card-item"><i class="material-icons">health_and_safety</i>خدمات مجتمعية</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="https://sfile.chatglm.cn/images-ppt/b9811ce4cb99.jpg" alt="قاعة محاضرات عسكرية">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">بحث عن التربية العسكرية</div>
+            <div class="footer-text">9</div>
+        </div>
+    </div>
+</body>
+</html>

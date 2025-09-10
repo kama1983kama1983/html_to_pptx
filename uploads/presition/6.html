@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنمية الوعي الوطني والقومي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9)), url('https://sfile.chatglm.cn/images-ppt/9ef63064bef2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #CE1126;
+            padding: 20px 70px;
+            color: white;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 30px 70px;
+        }
+        .definition-box {
+            background-color: rgba(206, 17, 38, 0.08);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-right: 5px solid #CE1126;
+        }
+        .definition-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #CE1126;
+            display: flex;
+            align-items: center;
+        }
+        .definition-title i {
+            margin-left: 15px;
+            font-size: 32px;
+        }
+        .definition-text {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #333;
+            font-weight: 600;
+        }
+        .contribution-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+        .contribution-title i {
+            margin-left: 15px;
+            font-size: 32px;
+            color: #CE1126;
+        }
+        .contribution-cards {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+        .card {
+            flex: 1;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .card-image {
+            height: 180px;
+            overflow: hidden;
+        }
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+        .card-title i {
+            margin-left: 10px;
+            font-size: 24px;
+            color: #CE1126;
+        }
+        .card-points {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .card-point {
+            display: flex;
+            align-items: center;
+        }
+        .card-point i {
+            color: #CE1126;
+            margin-left: 8px;
+            font-size: 16px;
+        }
+        .card-point-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: #444;
+        }
+        .flag-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                rgba(206, 17, 38, 0.05) 0%, 
+                rgba(206, 17, 38, 0.05) 33.3%, 
+                rgba(255, 255, 255, 0.05) 33.3%, 
+                rgba(255, 255, 255, 0.05) 66.6%, 
+                rgba(0, 0, 0, 0.05) 66.6%, 
+                rgba(0, 0, 0, 0.05) 100%);
+            z-index: -1;
+        }
+        .footer {
+            padding: 15px 70px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="flag-overlay"></div>
+        <div class="header">
+            <h1 class="title">تنمية الوعي الوطني والقومي</h1>
+        </div>
+        <div class="content">
+            <div class="definition-box">
+                <div class="definition-title">
+                    <i class="fas fa-brain"></i>
+                    <span>تعريف الوعي الوطني</span>
+                </div>
+                <div class="definition-text">
+                    "إدراك الفرد لمكانة وطنه ومسؤولياته تجاهه"
+                </div>
+            </div>
+            
+            <div class="contribution-title">
+                <i class="fas fa-lightbulb"></i>
+                <span>كيف تساهم التربية العسكرية في تنمية الوعي الوطني</span>
+            </div>
+            
+            <div class="contribution-cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://sfile.chatglm.cn/images-ppt/84a8b13ad381.jpg" alt="المواطنون يرفعون الأعلام المصرية">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <i class="fas fa-history"></i>
+                            <span>تعليم تاريخ مصر العسكري</span>
+                        </div>
+                        <div class="card-points">
+                            <div class="card-point">
+                                <i class="fas fa-star"></i>
+                                <span class="card-point-text">الانتصارات التاريخية</span>
+                            </div>
+                            <div class="card-point">
+                                <i class="fas fa-medal"></i>
+                                <span class="card-point-text">البطولات العسكرية</span>
+                            </div>
+                            <div class="card-point">
+                                <i class="fas fa-landmark"></i>
+                                <span class="card-point-text">تطور القوات المسلحة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://sfile.chatglm.cn/images-ppt/9ef63064bef2.jpg" alt="علم مصر">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>التوعية بمخاطر الأمن القومي</span>
+                        </div>
+                        <div class="card-points">
+                            <div class="card-point">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span class="card-point-text">التحديات الأمنية</span>
+                            </div>
+                            <div class="card-point">
+                                <i class="fas fa-globe-africa"></i>
+                                <span class="card-point-text">التهديدات الإقليمية</span>
+                            </div>
+                            <div class="card-point">
+                                <i class="fas fa-user-shield"></i>
+                                <span class="card-point-text">آليات الحماية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://sfile.chatglm.cn/images-ppt/f114e900f137.jpg" alt="علم مصر في غروب الشمس">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <i class="fas fa-heart"></i>
+                            <span>غرس قيم التضحية والفداء</span>
+                        </div>
+                        <div class="card-points">
+                            <div class="card-point">
+                                <i class="fas fa-flag"></i>
+                                <span class="card-point-text">حب الوطن</span>
+                            </div>
+                            <div class="card-point">
+                                <i class="fas fa-hands-helping"></i>
+                                <span class="card-point-text">التضحية من أجله</span>
+                            </div>
+                            <div class="card-point">
+                                <i class="fas fa-monument"></i>
+                                <span class="card-point-text">حماية مقدساته</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">بحث عن التربية العسكرية</div>
+            <div class="footer-text">7</div>
+        </div>
+    </div>
+</body>
+</html>

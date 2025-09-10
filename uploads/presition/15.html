@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المراجع</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #CE1126;
+            padding: 20px 70px;
+            color: white;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 30px 70px;
+        }
+        .references-container {
+            display: flex;
+            gap: 30px;
+            flex-grow: 1;
+        }
+        .reference-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+        .section-title i {
+            margin-left: 15px;
+            font-size: 32px;
+            color: #CE1126;
+        }
+        .reference-list {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            flex-grow: 1;
+        }
+        .reference-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .reference-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .reference-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(206, 17, 38, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        .reference-icon i {
+            font-size: 28px;
+            color: #CE1126;
+        }
+        .reference-content {
+            flex-grow: 1;
+        }
+        .reference-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .reference-details {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.4;
+        }
+        .reference-highlight {
+            color: #CE1126;
+            font-weight: 500;
+        }
+        .footer {
+            padding: 15px 70px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="header">
+            <h1 class="title">المراجع</h1>
+        </div>
+        <div class="content">
+            <div class="references-container">
+                <div class="reference-section">
+                    <div class="section-title">
+                        <i class="material-icons">gavel</i>
+                        <span>قوانين ولوائح وزارة الدفاع</span>
+                    </div>
+                    <div class="reference-list">
+                        <div class="reference-item">
+                            <div class="reference-icon">
+                                <i class="material-icons">description</i>
+                            </div>
+                            <div class="reference-content">
+                                <div class="reference-title">القانون رقم <span class="reference-highlight">46 لسنة 1973</span></div>
+                                <div class="reference-details">صدر في 7/6/1973، ينص على ضم مادة التربية العسكرية للمواد الدراسية في مرحلتي التعليم الثانوي والعالي</div>
+                            </div>
+                        </div>
+                        <div class="reference-item">
+                            <div class="reference-icon">
+                                <i class="material-icons">assignment</i>
+                            </div>
+                            <div class="reference-content">
+                                <div class="reference-title">اللائحة التنفيذية للتربية العسكرية</div>
+                                <div class="reference-details">تنظم آليات تطبيق التربية العسكرية وتحدد مناهجها وخططها التدريبية في الجامعات المصرية</div>
+                            </div>
+                        </div>
+                        <div class="reference-item">
+                            <div class="reference-icon">
+                                <i class="material-icons">update</i>
+                            </div>
+                            <div class="reference-content">
+                                <div class="reference-title">القانون رقم <span class="reference-highlight">165 لسنة 2020</span></div>
+                                <div class="reference-details">تعديل القانون رقم 46 لسنة 1973 لتشمل التربية العسكرية التدريب والثقافة العسكرية والخدمة الطبية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reference-section">
+                    <div class="section-title">
+                        <i class="material-icons">menu_book</i>
+                        <span>كتب ومراجع عن التربية الوطنية</span>
+                    </div>
+                    <div class="reference-list">
+                        <div class="reference-item">
+                            <div class="reference-icon">
+                                <i class="material-icons">book</i>
+                            </div>
+                            <div class="reference-content">
+                                <div class="reference-title">كتاب "التربية العسكرية-1"</div>
+                                <div class="reference-details">تأليف: <span class="reference-highlight">محمود رمضان</span></div>
+                            </div>
+                        </div>
+                        <div class="reference-item">
+                            <div class="reference-icon">
+                                <i class="material-icons">book</i>
+                            </div>
+                            <div class="reference-content">
+                                <div class="reference-title">"كل ما تريد معرفته عن دورة التربية العسكرية"</div>
+                                <div class="reference-details">تأليف: <span class="reference-highlight">العقيد أحمد عبدالجواد</span></div>
+                            </div>
+                        </div>
+                        <div class="reference-item">
+                            <div class="reference-icon">
+                                <i class="material-icons">slideshow</i>
+                            </div>
+                            <div class="reference-content">
+                                <div class="reference-title">محاضرات التربية العسكرية</div>
+                                <div class="reference-details">محاضرات عن <span class="reference-highlight">المخدرات، الشائعات، حروب الجيل الرابع، جهود القوات المسلحة في التنمية</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">بحث عن التربية العسكرية</div>
+            <div class="footer-text">15</div>
+        </div>
+    </div>
+</body>
+</html>
